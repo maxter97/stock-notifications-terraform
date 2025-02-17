@@ -20,6 +20,9 @@ Sign up at https://www.alphavantage.co/support/#api-key for a free tier key.
 Make sure to save the key for later in the project
 
 ### 2. Store API Key as secret in Parameter store
+```bash
+aws ssm put-parameter --name "stock-api-key" --value "<API_KEY>" --type "SecureString"
+```
 
 ### 3. Run Terraform commands
 

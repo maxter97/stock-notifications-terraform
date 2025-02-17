@@ -1,5 +1,5 @@
 # Stock Notification System 
-Updated Project
+Updated Version of previous project https://github.com/maxter97/stock-notifications 
 ## Overview
 Creating a stock notification system to send real-time data on your favorte stocks to users thought email and/or text. Now using terraform!
 
@@ -10,7 +10,7 @@ Creating a stock notification system to send real-time data on your favorte stoc
 2. An AWS Account 
 3. API Key from Alpha Vantage or any stock market API
 4. A Code/Text Editor: To edit any code if needed
-5. Terraform
+5. Terraform 
 ## Instruction
 *To add/remove the stocks you receive make changes to this line of code with the symbol of the stocks you want to see in the stock-notifications.py file
 </br>
@@ -25,6 +25,26 @@ aws ssm put-parameter --name "stock-api-key" --value "<API_KEY>" --type "SecureS
 ```
 
 ### 3. Run Terraform commands
+Initializes the directory
+```bash
+    terraform init 
+```
+Format your configuration if needed 
+```bash
+    terraform fmt 
+```
+Validate your configuration
+```bash
+    terraform validate 
+```
+Apply the configuration and creates infrastructure
+```bash
+terraform apply
+```
+Terminates resources created by Terraform
+```bash
+    terraform destroy #Use when you want to delete resources 
+```
 
 ### 4. Create subscription for SNS topic and subscribe to it
 You can subscribe using email and/or SMS

@@ -27,15 +27,15 @@ aws ssm put-parameter --name "stock-api-key" --value "<API_KEY>" --type "SecureS
 ### 3. Run Terraform commands
 Initializes the directory
 ```bash
-    terraform init 
+terraform init 
 ```
 Format your configuration if needed 
 ```bash
-    terraform fmt 
+terraform fmt 
 ```
 Validate your configuration
 ```bash
-    terraform validate 
+terraform validate 
 ```
 Apply the configuration and creates infrastructure
 ```bash
@@ -43,7 +43,7 @@ terraform apply
 ```
 Terminates resources created by Terraform
 ```bash
-    terraform destroy #Use when you want to delete resources 
+terraform destroy  
 ```
 
 ### 4. Create subscription for SNS topic and subscribe to it
